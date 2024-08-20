@@ -1,3 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using eva01_radar.ApiRequest;
 
-Console.WriteLine("Hello, World!");
+// api test
+IRequest request = new Request();
+string response = request.Get();
+
+// print response
+Console.WriteLine(response);
